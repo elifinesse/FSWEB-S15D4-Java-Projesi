@@ -32,10 +32,8 @@ public class Main {
         text = text.replaceAll("[.,'?!_-]", "").replace(" ", "").toLowerCase(new Locale("en"));
         char[] chars = text.toCharArray();
         Stack<Character> charStack = new Stack<>();
-        //Queue<Character> charQueue = new LinkedList<>();
         for(char c: chars){
             charStack.push(c);
-            //charQueue.add(c);
         }
         StringBuilder reversed = new StringBuilder();
         while(!charStack.isEmpty()){
